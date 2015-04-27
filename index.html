@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>dang-bars</title>
+        <title>dang-sunburst</title>
         <meta charset="utf-8" />
 
         <!--
@@ -62,128 +62,20 @@
 
 <p>&nbsp;</p>
 
-<h2><b>Single Bar Chart: Directive</b></h2>
+<h2><b>Streamgraph</b></h2>
 
-<p class="lead">The following example shows a simple bar chart that is implemented as an
-Angular.js directive. This makes it possible to use HTML code like <code>&lt;bar-chart&gt;&lt;/bar-chart&gt;</code>
+<p class="lead">This is a simple streamgraph example that demonstrates the use 
+of the basic components of a streamgraph: area charts, stacking, and smoothing.
+This is implemented within the Angular.js framework using an Angular directive.
+This makes it possible to use HTML code like <code>&lt;stream-chart&gt;&lt;/stream-chart&gt;</code>
 and have it translated into Javascript code that assembles the data and 
 builds the D3 bar chart.
 </p>
 <p>
-<img src="/dang-streamgraph/images/simplebar.png" class="index_img img-responsive" />
 </p>
 <p>
 <a class="index_btn btn btn-large btn-primary" 
-    href="first/simplebar.html">Simple Bar Chart</a></p>
-
-
-
-</div>
-<div class="row">
-
-
-<h2><b>Double Bar Chart: Directive</b></h2>
-
-<p class="lead">And now a double-chart that re-uses the same directive
-with an option to sort the data or not.
-<p class="lead">This double-chart demonstrates how Angular.js directives can be re-used, 
-and further, how options can be added to the directives to make it possible to 
-re-use directive code to construct several different plots.
-</p>
-<p class="lead">These charts also share a selection, via a shared variable. 
-This allows the charts to share a selection without interacting with each other.
-With this in place, we don't need a gazillion interfaces for every chart that needs to share something
-with another chart. 
-</p>
-<p>
-<img src="/dang-streamgraph/images/doublebar.png" class="index_img img-responsive" />
-</p>
-<p>
-<a class="index_btn btn btn-large btn-primary" 
-    href="double/doublebar.html">Double Bar Chart</a>
-</p>
-
-
-</div>
-<div class="row">
-
-
-<h2><b>Multi Bar Chart: Directive</b></h2>
-
-<p class="lead">The following bar chart is a multi-series bar chart, demonstrating how to 
-plot multiple x-y relationships on a single bar chart. This multi-series bar chart is drawn
-using an Angular.js directive.
-</p>
-<p>
-<img src="/dang-streamgraph/images/multibar.png" class="index_img img-responsive" />
-</p>
-<p>
-<a class="index_btn btn btn-large btn-primary" 
-    href="first/multibar.html">Multi Bar Chart</a></p>
-</p>
-
-
-
-</div>
-<div class="row">
-
-
-
-<p class="lead">This example adds a button group that allows the user to sort the data. 
-Each time the data is re-sorted, the bar chart is re-drawn. 
-This is possible using the variable watch functionality built into Angular.js.
-<p>
-<img src="/dang-streamgraph/images/sortablemultibar.png" class="index_img img-responsive" />
-</p>
-<p>
-<a class="index_btn btn btn-large btn-primary" 
-    href="first/sortablemultibar.html">Sortable Multi Bar Chart</a></p>
-</p>
-
-
-
-
-</div>
-<div class="row">
-
-
-
-
-<h2><b>Animated Sorting</b></h2>
-
-<p class="lead">This example illustrates the use of animation for 
-visualizing the sorting of data bound to the bar chart. 
-The previous sorting example is modified so that the 
-transition between different sorts is animated. 
-
-<p>
-<img src="/dang-streamgraph/images/animsorted.png" class="index_img img-responsive" />
-</p>
-<p>
-<a class="index_btn btn btn-large btn-primary" 
-    href="anim/animsortable.html">Animated Sorting</a></p>
-</p>
-
-
-
-
-</div>
-<div class="row">
-
-
-
-
-<h2><b></b></h2>
-
-<p class="lead">
-<p>
-<img src="/dang-streamgraph/images/anim.png" class="index_img img-responsive" />
-</p>
-<p>
-<a class="index_btn btn btn-large btn-primary" 
-    href="anim/animsortable.html">Animated </a></p>
-</p>
-
+    href="basic/basic.html">Streamgraph</a></p>
 
 
 
