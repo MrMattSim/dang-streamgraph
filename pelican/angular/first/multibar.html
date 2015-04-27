@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% set mytitle="Multi Bar Chart" %}
+
+{# ----------- title -------------- #}
+
+{% block title %}{{ mytitle }}{% endblock %}
+
+{# ----------- content ------------- #}
+
+{% block content %}
+
+<link href="{{ SITEURL }}/first/multibar.css" rel="stylesheet" stype="text/css" />
+
+<div ng-app="multiApp">
+
+    <div ng-controller="MultiBarController" ng-init="initialize()">
+
+        <div class="row">
+            <div class="col-md-12" id="head">
+                <multi-bar-head></multi-bar-head>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="chart">
+                <multi-bar-chart></multi-bar-chart>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12" id="text">
+                {% include 'multibar.md' %}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="{{ SITEURL }}/first/multibar_modcontrol.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/first/multibar_directives.js"></script>
+
+{% endblock %}
+
+

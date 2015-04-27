@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% set mytitle="Simple Bar Chart" %}
+
+{# ----------- title -------------- #}
+
+{% block title %}{{ mytitle }}{% endblock %}
+
+{# ----------- content ------------- #}
+
+{% block content %}
+
+<link href="{{ SITEURL }}/first/simplebar.css" rel="stylesheet" stype="text/css" />
+
+<div ng-app="simpleApp">
+
+    <div ng-controller="SimpleBarController" ng-init="initialize()">
+
+        <div class="row">
+            <div class="col-md-12" id="head">
+                <simple-bar-head></simple-bar-head>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="chart">
+                <simple-bar-chart></simple-bar-chart>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12" id="text">
+                {% include 'simplebar.md' %}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="{{ SITEURL }}/first/simplebar_modcontrol.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/first/simplebar_directives.js"></script>
+
+{% endblock %}
+
+
