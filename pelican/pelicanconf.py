@@ -19,7 +19,7 @@ THEME = 'simple-angular'
 
 # template locations 
 EXTRA_TEMPLATES_PATHS = ['angular',
-                         'angular/first']
+                         'angular/basic']
 
 # template files 
 TEMPLATE_PAGES = {}
@@ -31,13 +31,12 @@ TEMPLATE_PAGES['index.html'] = 'index.html'
 TEMPLATE_PAGES['hello.html'] = 'hello/index.html'
 
 
-# first charts
 
-## simple bar chart
-#TEMPLATE_PAGES['simplebar.html']          = 'first/simplebar.html'
-#TEMPLATE_PAGES['simplebar.css']           = 'first/simplebar.css'
-#TEMPLATE_PAGES['simplebar_modcontrol.js'] = 'first/simplebar_modcontrol.js'
-#TEMPLATE_PAGES['simplebar_directives.js'] = 'first/simplebar_directives.js'
+# streamgraph chart
+TEMPLATE_PAGES['basic.html']          = 'basic/basic.html'
+TEMPLATE_PAGES['basic.css']           = 'basic/basic.css'
+TEMPLATE_PAGES['basic_modcontrol.js'] = 'basic/basic_modcontrol.js'
+TEMPLATE_PAGES['basic_directives.js'] = 'basic/basic_directives.js'
 
 
 

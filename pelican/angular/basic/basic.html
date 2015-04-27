@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% set mytitle="Multi Bar Chart" %}
+{% set mytitle="Streamgraph Chart" %}
 
 {# ----------- title -------------- #}
 
@@ -10,27 +10,27 @@
 
 {% block content %}
 
-<link href="{{ SITEURL }}/first/multibar.css" rel="stylesheet" stype="text/css" />
+<link href="{{ SITEURL }}/basic/basic.css" rel="stylesheet" stype="text/css" />
 
-<div ng-app="multiApp">
+<div ng-app="streamgraphApp">
 
-    <div ng-controller="MultiBarController" ng-init="initialize()">
+    <div ng-controller="StreamgraphController" ng-init="initialize()">
 
         <div class="row">
             <div class="col-md-12" id="head">
-                <multi-bar-head></multi-bar-head>
+                <streamgraph-head></streamgraph-head>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12" id="chart">
-                <multi-bar-chart></multi-bar-chart>
+                <streamgraph-chart></streamgraph-chart>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-12" id="text">
-                {% include 'multibar.md' %}
+                {% include 'basic.md' %}
             </div>
         </div>
 
@@ -38,8 +38,8 @@
 
 </div>
 
-<script type="text/javascript" src="{{ SITEURL }}/first/multibar_modcontrol.js"></script>
-<script type="text/javascript" src="{{ SITEURL }}/first/multibar_directives.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/basic/basic_modcontrol.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/basic/basic_directives.js"></script>
 
 {% endblock %}
 
