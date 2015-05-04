@@ -86,11 +86,11 @@ ng = a.directive('streamgraphChart', function($compile) {
         // -------
         // 
 
-        var colors = d3.range(data0.length).map(function() { return d3.interpolateRgb("#aad", "#556")(Math.random()); });
+        //var colors = d3.range(data0.length).map(function() { return d3.interpolateRgb("#aad", "#556")(Math.random()); });
+        //        .color(function(d, i) { return colors[i]; }) // use same colors for both data sets
 
         var streamgraph = streamgraphChart()
                 .margin({top: 10, right: 10, bottom: 10, left: 10})
-                .color(function(d, i) { return colors[i]; }) // use same colors for both data sets
                 .transitionDuration(750);
         d3.select(el)
                 .datum(data0)
