@@ -8,7 +8,7 @@ import os
 SITEURL = ''
 AUTHOR = u'charlesreid1'
 SITENAME = u'dang-streamgraph'
-#SITEURL = '/dang-streamgraph'
+SITEURL = '/dang-streamgraph'
 
 PATH = 'content'
 TIMEZONE = 'America/Los_Angeles'
